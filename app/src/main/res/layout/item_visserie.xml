@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/color_card_grey"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+
+    <EditText
+        android:id="@+id/editText_nom_petite_fourniture"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Nom de la piéce"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinner_matiere"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:entries="@array/matiere_array" />
+
+    <EditText
+        android:id="@+id/editText_quantite_visserie"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="quantite"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextText_reference_petite_fourniture"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Référence"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/button_supprimer_petite_fourniture"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@null"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+</LinearLayout>

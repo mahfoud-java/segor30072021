@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  >
+    <data>
+
+        <variable
+            name="alesage"
+            type="com.tpjava2.homeactivity.models.AlesageCarter" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+
+        <EditText
+            android:id="@+id/editText_type_alesage_carter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="@{alesage.type}"
+            android:hint="type"
+            android:inputType="textPersonName" />
+
+
+
+        <EditText
+            android:id="@+id/editText_diametre_alesage_carter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="@{alesage.diametreAlesageCarter.toString()}"
+            android:hint="diamètre"
+            android:inputType="textPersonName"/>
+
+
+        <EditText
+            android:id="@+id/editText_norme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="@{alesage.norme}"
+            android:hint="norme"
+            android:inputType="textPersonName"/>
+
+
+        <ImageButton
+            android:id="@+id/button_supprimer_alesage_carter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+    </LinearLayout>
+
+</layout>
